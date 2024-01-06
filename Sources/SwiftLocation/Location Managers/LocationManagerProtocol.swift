@@ -50,7 +50,7 @@ public protocol LocationManagerProtocol {
     var allowsBackgroundLocationUpdates: Bool { get set }
     #endif
     
-    func locationServicesEnabled() -> Bool
+    func locationServicesEnabled() async -> Bool
     
     // MARK: - Location Permissions
     
